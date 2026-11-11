@@ -1,0 +1,35 @@
+{
+  "findings": [
+    {
+      "rule": "instruction-override",
+      "start": 20,
+      "end": 48
+    },
+    {
+      "rule": "secret-request",
+      "start": 53,
+      "end": 70
+    },
+    {
+      "rule": "role-spoofing",
+      "start": 0,
+      "end": 19
+    }
+  ],
+  "decisions": [
+    {
+      "id": "read-document",
+      "allowed": true,
+      "reasons": []
+    },
+    {
+      "id": "export-data",
+      "allowed": false,
+      "reasons": [
+        "destination-not-allowed",
+        "approval-required"
+      ]
+    }
+  ],
+  "offset_basis": "normalized-content"
+}
